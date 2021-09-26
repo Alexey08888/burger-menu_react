@@ -21,15 +21,15 @@ class BurgerMenu extends React.Component {
 
     return (
       <div>
-        <nav className="nav"> 
-          <div onClick={() => this.switchState()}
-        className="BurgerMenu_container" >
+        <nav className="nav">
+          <div
+            onClick={() => this.switchState()}
+            className="BurgerMenu_container"
+          >
             <i></i>
             <i></i>
             <i></i>
           </div>
-       
-         
         </nav>
         <div className={showMenuClass}>Text</div>
       </div>
