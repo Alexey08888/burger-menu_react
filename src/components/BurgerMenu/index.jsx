@@ -1,12 +1,11 @@
 import React from "react";
-import  './index.css';
-
+import "./index.css";
 
 class BurgerMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    inShown: false,
+      inShown: false,
     };
   }
 
@@ -17,19 +16,22 @@ class BurgerMenu extends React.Component {
   };
 
   render() {
-    
-    const showMenuClass = this.state.inShown === true ? "menu-shown" : "menu-hidden"
+    const showMenuClass =
+      this.state.inShown === true ? "menu-shown" : "menu-hidden";
 
     return (
       <div>
-        <div 
-        onClick={() => this.switchState()}
-        className="burger">
-        
-        </div>
+        <nav className="nav"> 
+          <div onClick={() => this.switchState()}
+        className="BurgerMenu_container" >
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+       
+         
+        </nav>
         <div className={showMenuClass}>Text</div>
-
-
       </div>
     );
   }
